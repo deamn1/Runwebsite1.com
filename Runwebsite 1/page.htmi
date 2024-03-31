@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+
+
+    <style>
+        body {
+            background: #ffffff;
+            /* Цвет фона */
+            color: rgb(0, 0, 0);
+            /* Цвет текста */
+        }
+
+
+
+
+
+        .list {
+            display: inline-block;
+            border-style: solid;
+            border-width: 0.5px;
+
+            padding-right: 10px;
+
+        }
+
+
+        .list>p {
+
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+
+
+        .foto {
+            float: right;
+        }
+
+        header {
+
+            background: linear-gradient(#6d8397, #4a8994)
+        }
+
+        ul {
+
+            margin: 0px;
+            padding: 30px;
+
+
+            list-style: none;
+        }
+
+
+        .a {
+            font-size: 10px;
+            padding: 30px;
+
+            text-align: center;
+        }
+
+        a:hover {
+            color: #5c452e;
+
+        }
+
+        .con {
+
+
+            text-align: right;
+
+        }
+
+        .li {
+            display: inline;
+
+
+        }
+
+        .logo>img {
+
+
+            float: left;
+
+
+
+        }
+
+
+
+        * {
+            box-sizing: border-box
+        }
+
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #cecccc;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ecececce;
+            outline: none;
+        }
+
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #ffffff;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit/register button */
+        .registerbtn {
+            background-color: #3a7381;
+            color: rgb(255, 255, 255);
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+        /* Add a blue text color to links */
+        a:hover {
+            color: #506c6d;
+
+        }
+
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+            background-color: #b3b2b2;
+            text-align: center;
+        }
+
+        /* Стиль верхней панели навигации */
+        .navbar {
+            overflow: hidden;
+            /* Скрыть переполнение */
+            background-color: #494848;
+            /* Темный цвет фона */
+        }
+
+        /* Стиль ссылок на панели навигации */
+        .navbar a {
+            float: left;
+            /* Убедитесь, что ссылки остаются бок о бок */
+            display: block;
+            /* Измените отображение на блок, по причинам отзывчивости (см. ниже) */
+            color: white;
+            /* Белый цвет текста */
+            text-align: center;
+            /* Текст по центру */
+            padding: 14px 20px;
+            /* Добавить некоторые отступы */
+            text-decoration: none;
+            /* Удалить подчеркивание */
+        }
+
+        /* Выровненная по правому краю ссылка */
+        .navbar a.right {
+            float: right;
+            /* Переместите ссылку вправо */
+        }
+
+        /* Изменение цвета при наведении / наведении курсора мыши */
+        .navbar a:hover {
+            background-color: #ddd;
+            /* Серый цвет фона */
+            color: rgb(245, 243, 243);
+            /* Черный цвет текста */
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.htmi">Главная</a>
+
+        <a href="page2.htmi" class="right">Войти</a>
+
+    </div>
+
+    <div class="main">
+
+        <div class="con">
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <form action="index.htmi">
+        <div class="container">
+            <h1>Регистрация</h1>
+            <p>Пожалуйста войдите в аккаунт.</p>
+            <hr>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Ввидите Email" name="email" required>
+
+            <label for="psw"><b>Пароль</b></label>
+            <input type="password" placeholder="Ввидите пароль" name="psw" required>
+
+            <label for="psw-repeat"><b>Повторите пароль </b></label>
+            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            <hr>
+
+            <p>Создавая учетную запись, вы соглашаетесь с нашими <a href="#" style="color:rgb(59, 59, 59);">условиями
+                    и конфиденциальностью.</a>.</p>
+            <button type="submit" class="registerbtn">Регистрация</button>
+        </div>
+
+        <div class="container signin">
+            <p>У вас уже есть аккаунт? <a href="page2.htmi" style="color:rgb(82, 82, 82);">Войти</a>.</p>
+        </div>
+    </form>
+
+
+
+
+
+</body>
+
+</html>

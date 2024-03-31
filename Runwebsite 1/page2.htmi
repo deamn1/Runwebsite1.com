@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+
+    <style>
+        body {
+            background: #ffffff;
+            /* Цвет фона */
+            color: rgb(63, 62, 62);
+            /* Цвет текста */
+        }
+
+
+
+        .list {
+            display: inline-block;
+            border-style: solid;
+            border-width: 0.5px;
+
+            padding-right: 10px;
+
+        }
+
+
+        .list>p {
+
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+
+
+        .foto {
+            float: right;
+        }
+
+        header {
+
+            background: linear-gradient(#6d8397, #4a8994)
+        }
+
+        ul {
+
+            margin: 0px;
+            padding: 30px;
+
+
+            list-style: none;
+        }
+
+
+        .a {
+            font-size: 10px;
+            padding: 30px;
+
+            text-align: center;
+        }
+
+        a:hover {
+            color: #506c6d;
+
+        }
+
+        .con {
+
+
+            text-align: right;
+
+        }
+
+        .li {
+            display: inline;
+
+
+        }
+
+        .logo>img {
+
+
+            float: left;
+
+
+
+        }
+
+
+        form {
+            border: 3px solid #fafafa00;
+        }
+
+        /* Входы полной ширины */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #9b4141;
+            box-sizing: border-box;
+        }
+
+        /* Установите стиль для всех кнопок */
+        button {
+            background-color: rgb(65, 122, 136);
+            color: rgb(255, 255, 255);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Добавить эффект наведения для кнопок */
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* Дополнительный стиль для кнопки отмены (красный) */
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #9b3830bb;
+        }
+
+        /* Центрируйте изображение Аватара внутри этого контейнера */
+        .imgcontainer {
+            text-align: left;
+            margin: 24px 0 12px 0;
+        }
+
+        /* Аватар изображение */
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        /* Добавить отступы для контейнеров */
+        .container {
+            padding: 16px;
+        }
+
+        /* Текст "Забыли пароль" */
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* Измените стили для кнопки span и cancel на очень маленьких экранах */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+
+
+        /* Стиль верхней панели навигации */
+        .navbar {
+            overflow: hidden;
+            /* Скрыть переполнение */
+            background-color: #3f3f3f;
+            /* Темный цвет фона */
+        }
+
+        /* Стиль ссылок на панели навигации */
+        .navbar a {
+            float: left;
+            /* Убедитесь, что ссылки остаются бок о бок */
+            display: block;
+            /* Измените отображение на блок, по причинам отзывчивости (см. ниже) */
+            color: rgb(245, 242, 242);
+            /* Белый цвет текста */
+            text-align: center;
+            /* Текст по центру */
+            padding: 14px 20px;
+            /* Добавить некоторые отступы */
+            text-decoration: none;
+            /* Удалить подчеркивание */
+        }
+
+        /* Выровненная по правому краю ссылка */
+        .navbar a.right {
+            float: right;
+            /* Переместите ссылку вправо */
+        }
+
+        /* Изменение цвета при наведении / наведении курсора мыши */
+        .navbar a:hover {
+            background-color: #eeeeee;
+            /* Серый цвет фона */
+            color: black;
+            /* Черный цвет текста */
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="navbar">
+        <a href="index.htmi">Главная</a>
+
+        <a href="page.htmi" class="right">Регистрация</a>
+
+    </div>
+
+
+
+    <div class="main">
+
+        <div class="con">
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <form action="index.htmi" method="post">
+
+
+        <div class="container">
+
+            <h1>Войти</h1>
+
+            <label for="uname"><b>Пользователь</b></label>
+            <input type="text" placeholder="Введите имя" name="uname" required>
+
+            <label for="psw"><b>Пароль</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+
+            <button type="submit">Вход</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#7e7d7d">
+            <button type="button" class="cancelbtn">Отменить</button>
+            <span class="psw" style="color:rgb(0, 0, 0);">Забыли <a href="#"
+                    style="color:rgb(0, 0, 0);">пароль?</a></span>
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
